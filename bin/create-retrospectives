@@ -1,0 +1,35 @@
+#!/usr/bin/env bash
+
+set -e
+set -u
+[ -n "${DEBUG:-}" ] && set -x || true
+
+main() {
+  local YYYY="$(date '+%Y')"
+  local YYYYMMDD="$(date '+%Y%m%d')"
+  local TITLE
+
+  if (( $# == 0 )); then
+    echo -n 'title: '
+    read TITLE
+  else
+    TITLE="$*"
+  fi
+
+  local SAFE_TITLE="$(echo "$TITLE" | tr 'A-Z' 'a-z' | tr -s '\\/ :,' '-')"
+  local DIR="retrospectives/$YYYY"
+  local BASENAME="${YYYYMMDD}-${SAFE_TITLE}.md"
+
+  git checkout -b "retrospectives/$SAFE_TITLE"
+  mkdir -p "$DIR"
+  if ! [ -f "$DIR/$BASENAME" ]; then
+    ( echo "# $TITLE"; echo ) > "$DIR/$BASENAME"
+    git add "$DIR/$BASENAME"
+    git commit -m "retrospective: $TITLE"
+  fi
+
+  "${EDITOR:-vim}" "$DIR/$BASENAME"
+}
+
+main "$@"
+

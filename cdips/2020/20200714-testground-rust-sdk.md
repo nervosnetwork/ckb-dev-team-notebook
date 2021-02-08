@@ -1,0 +1,2 @@
+# Testground Rust SDK
+[Testground](https://github.com/testground/testground) is a testing framework that can help to build various testing environments and scenarios. An instance in testground is called test plan. We can construct test plans based on sdk, which may provide some features like barrier, metrics collecting, and so on. The official sdk provided by Testground is writing on Golang, however, most parts of Ckb/Muta toolchain are writing on Rust. So implementing a Rust version sdk will be helpful for us in creating more and complex test plans later.
