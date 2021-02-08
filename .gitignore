@@ -1,8 +1,8 @@
 .github
 
 reference/ckb-internal.md
-.obsidian/config
-.obsidian/workspace
+.obsidian/*
+!.obsidian/config-default
 okrs
 meeting-notes/*/*
 !meeting-notes/2020/20200[1-8]*
