@@ -1,7 +1,10 @@
 #!/bin/bash
 
-git reset --soft publish
+git symbolic-ref HEAD refs/heads/publish
+git reset
+
 mv -f README-publish.md README.md
 mv -f .gitignore-publish .gitignore
+
 git add .
 git commit -m "Publish on $(date)"
