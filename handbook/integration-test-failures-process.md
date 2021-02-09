@@ -13,7 +13,7 @@ Every week, we'll pick the most occurred failed test case to fix. We have one en
 
 If the test case is not fixed, it will be deferred to the next week. The test case can only defer once. If it is still not fixed in the next week, the test case must be disabled. Once there are now failed test cases, we will pick disabled test cases to work on.
 
-The board [D: Integration Test Failures](https://github.com/nervosnetwork/ckb-internal/projects/43) manages all the failures, and uses columns for the different states:
+The board [Integration Test Failures](https://github.com/nervosnetwork/ckb-internal/projects/43) manages all the failures, and uses columns for the different states:
 
 * To do: new failures
 * Troubleshooting: the devops owner is working on it
