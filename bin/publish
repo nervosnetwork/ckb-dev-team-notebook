@@ -8,3 +8,4 @@ mv -f .gitignore-publish .gitignore
 
 git add .
 git commit -m "Publish on $(date)"
+git push publish HEAD:main

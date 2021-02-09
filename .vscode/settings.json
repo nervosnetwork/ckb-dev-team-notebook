@@ -1,0 +1,13 @@
+{
+  // save files after a delay automatically
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+  // sort the explorer by modified date in descending order
+  "explorer.sortOrder": "modified",
+  // open files as tabs
+  "workbench.editor.enablePreview": false,
+  // reveal existing files if they are open (avoids tons of tabs)
+  "workbench.editor.revealIfOpen": true,
+  // open files from quick open as tabs
+  "workbench.editor.enablePreviewFromQuickOpen": false
+}
