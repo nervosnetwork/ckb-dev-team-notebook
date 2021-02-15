@@ -8,6 +8,7 @@ meeting-notes/*/*
 !meeting-notes/2020/20200[1-8]*
 retrospectives/*/*
 !retrospectives/2020/20200[1-8]*
+devops/
 
 TAGS
 tags
