@@ -1,6 +1,6 @@
 # Postmortem
 
-A project post-mortem is a process used to identify the causes of a project failure (or significant business-impairing downtime), and how to prevent them in the future. This is different from a [[Retrospective]], in which both positive and negative things are reviewed for a project.
+A project post-mortem is a process used to identify the causes of a project failure (or significant business-impairing downtime), and how to prevent them in the future. This is different from a retrospective, in which both positive and negative things are reviewed for a project.
 
 ## A Postmortem Reference
 
